@@ -1,1 +1,1 @@
-Alx simple shell project today
+This is an ALX project to create a simple bash sell

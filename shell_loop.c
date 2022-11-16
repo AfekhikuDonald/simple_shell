@@ -31,7 +31,6 @@ int hsh(info_t *info, char **av)
 		free_info(info, 0);
 	}
 	write_history(info);
-
 	free_info(info, 1);
 	if (!interactive(info) && info->status)
 		exit(info->status);
@@ -129,7 +128,7 @@ void find_cmd(info_t *info)
 void fork_cmd(info_t *info)
 {
 	pid_t child_pid;
-	
+
 	child_pid = fork();
 	if (child_pid == -1)
 	{
@@ -150,7 +149,6 @@ void fork_cmd(info_t *info)
 	}
 	else
 	{
-
 		wait(&(info->status));
 		if (WIFEXITED(info->status))
 		{

@@ -1,1 +1,1 @@
-This is an ALX project to create a simple bash sell
+This is an ALX project to create a simple bash shell
